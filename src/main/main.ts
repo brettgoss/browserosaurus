@@ -106,6 +106,9 @@ ipcMain.on(ACTIVITY_RUN, (_: Event, name: ActivityName) => {
     if (isOptHeld && activity.optCmd) {
       runCommand(activity.optCmd.replace('{URL}', urlToOpen))
     } else {
+      if (activity.profiles) {
+        // TODO: Prompt the user to select a profile and add --profile-directory={profileDirName}
+      }
       runCommand(activity.cmd.replace('{URL}', urlToOpen))
     }
   }
