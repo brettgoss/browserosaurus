@@ -2436,6 +2436,13 @@ chownr@^1.1.1:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.1.tgz#54726b8b8fff4df053c42187e801fb4412df1494"
   integrity sha512-j38EvO5+LHX84jlo6h4UzmOwi0UgW61WRyPtJz4qaadK5eY3BTS5TY/S1Stc3Uk2lIM6TPevAlULiEJwie860g==
 
+chrome-profile-list@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/chrome-profile-list/-/chrome-profile-list-1.1.0.tgz#bee989dbae8121e61570158b6e20fa2760f4f725"
+  integrity sha512-tQc61qEXluJjaVT9ol4oDSa90bqalV+Rk1GVRS5o4X5U79Gj763Le1+7oD+fHflf3RIBzzeST80T1tieerpk2g==
+  dependencies:
+    phylo "^1.0.0-rc.3"
+
 chrome-trace-event@^1.0.0, chrome-trace-event@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.2.tgz#234090ee97c7d4ad1a2c4beae27505deffc608a4"
@@ -5505,7 +5512,7 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json5@^0.5.0:
+json5@^0.5.0, json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
   integrity sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
@@ -6845,6 +6852,17 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+
+phylo@^1.0.0-rc.3:
+  version "1.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/phylo/-/phylo-1.0.0-rc.4.tgz#14a3ca43d776886951e9964d8b4eb7518fa79b61"
+  integrity sha512-iZGYFYdq+m4zfubH2wpsOzRCQcugZC6tA3Bwf+2Arh5S40SrBZDs+9B/lcTWp8rKiwNt/2B9z7vQK2GKGSXKuw==
+  dependencies:
+    json5 "^0.5.1"
+    mkdirp "^0.5.1"
+    rimraf "^2.6.2"
+    tmp "0.0.33"
+    which "^1.3.0"
 
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
@@ -8425,19 +8443,19 @@ tmp-promise@^1.0.5:
     bluebird "^3.5.0"
     tmp "0.1.0"
 
+tmp@0.0.33, tmp@^0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
+  integrity sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
+  dependencies:
+    os-tmpdir "~1.0.2"
+
 tmp@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.1.0.tgz#ee434a4e22543082e294ba6201dcc6eafefa2877"
   integrity sha512-J7Z2K08jbGcdA1kkQpJSqLF6T0tdQqpR2pnSUXsIchbPdTI9v3e85cLW0d6WDhwuAleOV71j2xWs8qMPfK7nKw==
   dependencies:
     rimraf "^2.6.3"
-
-tmp@^0.0.33:
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
-  integrity sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
-  dependencies:
-    os-tmpdir "~1.0.2"
 
 tmpl@1.0.x:
   version "1.0.4"
