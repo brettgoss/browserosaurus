@@ -1,5 +1,6 @@
 import { activities, ActivityName, activityNames } from '../config/activities'
 import { scanForApps } from './scanForApps'
+import { getActivityProfiles } from './getActivityProfiles'
 
 /**
  * Installed Apps
@@ -15,6 +16,11 @@ export const getInstalledActivities = async (): Promise<ActivityName[]> => {
     const actIsInstalled = !!(activity.appId && installedApps[activity.appId])
     if (actShouldAlwaysShow || actIsInstalled) return true
     return false
+  })
+
+  installedActivityNames.map(async name => {
+	const activity = activities[name]
+	if (activity.hasOwnProperty('profiles')) activity.profiles = await getActivityProfiles(name)
   })
 
   const orderedActivityNames = installedActivityNames.sort(

@@ -29,6 +29,7 @@ export interface Activity<Name = ActivityName> {
   optCmd?: string
   fav?: boolean
   logo: string
+  profiles?: object
 }
 
 export const activityNames = [
@@ -113,6 +114,7 @@ export const activities: Activities = {
     cmd: 'open "{URL}" -a "Google Chrome"',
     hotKey: 'g',
     logo: chrome,
+    profiles: [],
   },
   'Google Chrome Canary': {
     name: 'Google Chrome Canary',
